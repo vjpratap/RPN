@@ -1,3 +1,11 @@
 #include "../StackADT/stack.h"
 
-int evaluate(char *expression);
+typedef struct result Result;
+
+struct result {
+  int error;
+  int status;
+};
+
+
+Result evaluate(char *expression);

@@ -1,8 +1,5 @@
-linkedListTest.o rpnTest.o spickes.o stackTest.o
-linkedListTestRunner.exe rpnTestRunner.exe spickes.exe stackTestRunner.exe
-*.TestRunner.c
+*.o
+*.exe
+*TestRunner.c
 sampleTest.c
 spickes.c
-spickes.exe.core
-linkedListTestRunner.exe.core spickes.exe.core
-linkedListTestRunner.c rpnTestRunner.c stackTestRunner.c
