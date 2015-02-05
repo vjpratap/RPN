@@ -3,9 +3,9 @@
 #include "rpn.h"
 
 void test_that_function_evaluate_works_as_calculater_for_addition_or_not(){
-	Result resultValue = evaluate("2 3 +");
+	Result resultValue = evaluate("2546 3 +");
 	assertEqual(resultValue.error, 0);
-	assertEqual(resultValue.status,5);
+	assertEqual(resultValue.status,2549);
 }
 
 void test_that_function_evaluate_works_as_calculater_for_subtraction_or_not(){
