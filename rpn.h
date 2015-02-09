@@ -9,3 +9,4 @@ struct result {
 
 
 Result evaluate(char *expression);
+char * infixToPostfix(char * expression);	

@@ -3,9 +3,9 @@
 #include "rpn.h"
 
 void test_that_function_evaluate_works_as_calculater_for_addition_or_not(){
-	Result resultValue = evaluate("2546 3 +");
+	Result resultValue = evaluate("2546 36 +");
 	assertEqual(resultValue.error, 0);
-	assertEqual(resultValue.status,2549);
+	assertEqual(resultValue.status,2582);
 }
 
 void test_that_function_evaluate_works_as_calculater_for_subtraction_or_not(){
@@ -100,8 +100,41 @@ void test_that_function_evaluate_should_give_error_when_operator_comes_before_op
 	assertEqual(resultValue.status, 0);
 }
 
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function(){
+	assertEqual(strcmp(infixToPostfix("2 + 3"), "2 3 +"), 0);  
+}
 
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_multipleDigit(){
+	assertEqual(strcmp(infixToPostfix("2234 + 3543"), "2234 3543 +"), 0);  
+}
 
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_long(){
+	assertEqual(strcmp(infixToPostfix("2 + 3 * 4"), "2 3 4 * +"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_long_multipleDigit(){
+	assertEqual(strcmp(infixToPostfix("232 + 345 * 456"), "232 345 456 * +"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_long_for_with_presidence(){
+	assertEqual(strcmp(infixToPostfix("2 * 3 + 4"), "2 3 * 4 +"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_long_for_with_multipleDigit_for_presidence(){
+	assertEqual(strcmp(infixToPostfix("232 * 333 + 455"), "232 333 * 455 +"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression1(){
+	assertEqual(strcmp(infixToPostfix("A - B + C"), "A B - C +"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression2(){
+	assertEqual(strcmp(infixToPostfix("A * B ^ C + D"), "A B C ^ * D +"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression3(){
+	assertEqual(strcmp(infixToPostfix("3 + 4 * 5 / 6"), "3 4 5 * 6 / +"), 0);  
+}
 
 
 
