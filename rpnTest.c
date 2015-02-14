@@ -136,6 +136,35 @@ void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function
 	assertEqual(strcmp(infixToPostfix("3 + 4 * 5 / 6"), "3 4 5 * 6 / +"), 0);  
 }
 
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_long_for_ex(){
+	assertEqual(strcmp(infixToPostfix("2.32 * 33.3 + 4.55"), "2.32 33.3 * 4.55 +"), 0);  
+}
 
+void test_that_function_infixToPostfix_works_for_brase_expression1(){
+	assertEqual(strcmp(infixToPostfix("(3 + 4) * 5"), "3 4 + 5 *"), 0);
+}
 
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression4(){
+	assertEqual(strcmp(infixToPostfix("3 * (4 + 5)"), "3 4 5 + *"), 0);  
+}
 
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression5(){
+	assertEqual(strcmp(infixToPostfix("(aa + b + g) * (c - d) / (e + f)"), "aa b + g + c d - * e f + /"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression6(){
+	assertEqual(strcmp(infixToPostfix("((3 - 2) * (2 + 2))"), "3 2 - 2 2 + *"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression7(){
+	assertEqual(strcmp(infixToPostfix("(4 + 8) * (6 - 5) / ((3 - 2) * (2 + 2))"), "4 8 + 6 5 - * 3 2 - 2 2 + * /"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression8(){
+	assertEqual(strcmp(infixToPostfix("(300 + 23) * (43 - 21) / (84 + 7)"), "300 23 + 43 21 - * 84 7 + /"), 0);  
+}
+
+void test_that_function_infixToPostfix_gives_the_postfix_of_given_infix_function_for_expression9(){
+	printf(" ======================== '%s'\n", infixToPostfix("3 + 4 * 2 / (1 - 5) ^ 2 ^ 3"));
+	assertEqual(strcmp(infixToPostfix("3 + 4 * 2 / (1 - 5) ^ 2 ^ 3"), "3 4 2 * 1 5 - 2 3 ^ ^ / +"), 0);  
+}

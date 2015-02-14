@@ -1,20 +1,21 @@
 [main] spickes 1000 (0) exception: trapped!
 [main] spickes 1000 (0) exception: code 0xC0000005 at 0x61054E32
-[main] spickes 1000 (0) exception: ax 0x61405E76 bx 0x244FE00 cx 0x61005E7C dx 0x40105B
-[main] spickes 1000 (0) exception: si 0x61005E7C di 0x0 bp 0x244FDCC sp 0x244FDC4
+[main] spickes 1000 (0) exception: ax 0x401076 bx 0x401061 cx 0x401067 dx 0x40105B
+[main] spickes 1000 (0) exception: si 0x401067 di 0x0 bp 0x244FDB8 sp 0x244FDB0
 [main] spickes 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
 [main] spickes 1000 (0) stack: Stack trace:
-[main] spickes 1000 (0) stack: frame 0: sp = 0x244F964, pc = 0x6100A2C3
-[main] spickes 1000 (0) stack: frame 1: sp = 0x244F9A0, pc = 0x779BB499
-[main] spickes 1000 (0) stack: frame 2: sp = 0x244F9C4, pc = 0x779BB46B
-[main] spickes 1000 (0) stack: frame 3: sp = 0x244FA74, pc = 0x77970133
-[main] spickes 1000 (0) stack: frame 4: sp = 0x244FDCC, pc = 0x401087
-[main] spickes 1000 (0) stack: frame 5: sp = 0x244FDEC, pc = 0x61004402
-[main] spickes 1000 (0) stack: frame 6: sp = 0x244FF50, pc = 0x61004420
-[main] spickes 1000 (0) stack: frame 7: sp = 0x244FF5C, pc = 0x4011CE
-[main] spickes 1000 (0) stack: frame 8: sp = 0x244FF6C, pc = 0x40103A
-[main] spickes 1000 (0) stack: frame 9: sp = 0x244FF88, pc = 0x7730338A
-[main] spickes 1000 (0) stack: frame 10: sp = 0x244FF94, pc = 0x77999F72
-[main] spickes 1000 (0) stack: frame 11: sp = 0x244FFD4, pc = 0x77999F45
-[main] spickes 1000 (0) stack: frame 12: sp = 0x244FFEC, pc = 0x0
+[main] spickes 1000 (0) stack: frame 0: sp = 0x244F950, pc = 0x6100A2C3
+[main] spickes 1000 (0) stack: frame 1: sp = 0x244F98C, pc = 0x779BB499
+[main] spickes 1000 (0) stack: frame 2: sp = 0x244F9B0, pc = 0x779BB46B
+[main] spickes 1000 (0) stack: frame 3: sp = 0x244FA60, pc = 0x77970133
+[main] spickes 1000 (0) stack: frame 4: sp = 0x244FDB8, pc = 0x61054CBC
+[main] spickes 1000 (0) stack: frame 5: sp = 0x244FDCC, pc = 0x401092
+[main] spickes 1000 (0) stack: frame 6: sp = 0x244FDEC, pc = 0x61004402
+[main] spickes 1000 (0) stack: frame 7: sp = 0x244FF50, pc = 0x61004420
+[main] spickes 1000 (0) stack: frame 8: sp = 0x244FF5C, pc = 0x4011DE
+[main] spickes 1000 (0) stack: frame 9: sp = 0x244FF6C, pc = 0x40103A
+[main] spickes 1000 (0) stack: frame 10: sp = 0x244FF88, pc = 0x7730338A
+[main] spickes 1000 (0) stack: frame 11: sp = 0x244FF94, pc = 0x77999F72
+[main] spickes 1000 (0) stack: frame 12: sp = 0x244FFD4, pc = 0x77999F45
+[main] spickes 1000 (0) stack: frame 13: sp = 0x244FFEC, pc = 0x0
 [main] spickes 1000 (0) stack: End of stack trace
